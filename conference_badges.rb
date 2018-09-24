@@ -28,3 +28,4 @@ def printer(names)
     puts ele2
   end
 end
+end
