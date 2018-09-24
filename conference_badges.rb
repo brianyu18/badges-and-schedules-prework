@@ -1,5 +1,4 @@
 def badge_maker(name)
-  puts "Hello, my name is #{name}."
   return "Hello, my name is #{name}."
 end
 
@@ -8,8 +7,7 @@ def batch_badge_creator(list_names)
   list_names.each do |make|
     new_list << badge_maker(make)
   end
-  puts new_list
-  return new_list
+  new_list
 end
 
 def assign_rooms(list_names)
@@ -17,7 +15,6 @@ def assign_rooms(list_names)
   list_names.each_with_index do |name, idx|
     rooms << "Hello, #{name}! You'll be assigned to room #{idx+1}!"
   end
-  puts rooms
   rooms
 end
 
